@@ -1,0 +1,33 @@
+{
+  "name": "react-magic-mirror",
+  "version": "1.0.0",
+  "description": "My magic mirror setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"cd magic-mirror && npm start\"",
+    "server": "node server.js",
+    "client": "node start-client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dexz92/React-Magic-Mirror.git"
+  },
+  "keywords": [
+    "Magic",
+    "mirror"
+  ],
+  "author": "Dexz92",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dexz92/React-Magic-Mirror/issues"
+  },
+  "homepage": "https://github.com/Dexz92/React-Magic-Mirror#readme",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
