@@ -11,9 +11,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    return fetch('/api/hello')
+    fetch('/api/hello')
       .then((response) => response.json())
       .then((responseJson) => {
+        console.log(responseJson)
         this.setState({
           message: responseJson.message
         })
@@ -21,6 +22,7 @@ class App extends Component {
   }
   
   render() {
+    //onsole.log(this.state.message);
     return(
       <div className="App">
         <div className="App-header">
